@@ -1,0 +1,23 @@
+{
+  "name": "article-management-practice-with-ajax-jquery",
+  "version": "1.0.0",
+  "description": "Hi guys! here's just a simple example of using AJAX in jQuery. I create this application focus on client side only and it doesn't need a server to run - just html run on browser normally.Enjoy coding! If you have any feedback, please mail to me via: ren.sothearin@gmail.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "no command"
+  },
+  "keywords": [
+    "article-management-web",
+    "article-management-web",
+    "with",
+    "json",
+    "practice-article-management-with-jquery-ajax",
+    "jquery-ajax-full-practice"
+  ],
+  "author": "Ms. Sothearin Ren (Ms. Panda)",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
