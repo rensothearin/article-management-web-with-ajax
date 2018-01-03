@@ -1,5 +1,22 @@
 'use strict';
 
+function defaultImage(imageSrc) {
+  if (imageSrc == null) {
+    return ('<div><img class="article-image img img-responsive" src="../../public/images/page-not-found.png" alt="Image"></div>');
+  } else {
+    return ('<div><img  class="article-image img img-responsive" src='+ imageSrc +' style="width:100%" alt="Image"></div>');
+  }
+}
+
+function defaultArticleDescription(desc) {
+  console.log("Default description successfully executed");
+  if (desc == null || desc == "") {
+    return ('<div class="panel-footer">No description</div>');
+  } else {
+    return ('<div class="panel-footer">'+ desc +'</div>');
+  }
+}
+
 function getArticles() {
   $.ajax({
     url: "http://api-ams.me/v1/api/articles?page=1&limit=15",
@@ -12,11 +29,11 @@ function getArticles() {
     success: function(result, status, xhr) {
       console.log(result);
       for(var i=0; i<result.DATA.length; i++) {
-        $("#article div.row").append('<div class="col-sm-4">' +
+        $("#article div.row").append('<div class="col-md-4 col-sm-6">' +
           '<div class="panel panel-primary">' +
-            '<div class="panel-heading">BLACK FRIDAY DEAL</div>' +
-            '<div class="panel-body"><img src="../../public/images/default-image.jpg" class="img-responsive" style="width:100%" alt="Image"></div>' +
-            '<div class="panel-footer">Buy 50 mobiles and get a gift card</div>' +
+            '<div class="panel-heading">'+ result.DATA[i].TITLE +'</div>' +
+            defaultImage(result.DATA[i].IMAGE) +
+            defaultArticleDescription(result.DATA[i].DESCRIPTION) +
           '</div>' +
         '</div>')
       }

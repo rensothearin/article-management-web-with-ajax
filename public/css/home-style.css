@@ -55,12 +55,12 @@
 
 .panel-primary > .panel-heading {
   color: #fff;
-  background-color: #d9534f;
-  border-color: #d9534f;
+  background-color: #eb6c6a;
+  border-color: #f4f7f6;
 }
 
 .panel-primary {
-  border-color: #d9534f;
+  border-color: #f1f1f1;
 }
 
 .panel {
@@ -68,15 +68,28 @@
 }
 
 .panel-heading {
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-top-left-radius: 0px; 
   border-top-right-radius: 0px;
+  font-size: 17px;
 }
 
 .panel-footer {
+  color: #808080;
   background-color: #f4f7f6;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
 }
+
+.container {
+  width: 80%;
+}
+
+.img {
+  height: 250px;
+}
+
 /* Add a gray background color and some padding to the footer */
 footer {
   background-color: #f2f2f2;
