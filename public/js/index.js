@@ -4,7 +4,8 @@ function defaultImage(imageSrc) {
   if (imageSrc == null) {
     return ('<div><img class="article-image img img-responsive" src="../../public/images/page-not-found.png" alt="Image"></div>');
   } else {
-    return ('<div><img  class="article-image img img-responsive" src='+ imageSrc +' style="width:100%" alt="Image"></div>');
+    console.log(imageSrc);
+    return ('<div class="article-image img" style="background-size: cover; background-image: url('+ imageSrc +')"></div>');
   }
 }
 
@@ -13,6 +14,8 @@ function defaultArticleDescription(desc) {
   if (desc == null || desc == "") {
     return ('<div class="panel-footer">No description</div>');
   } else {
+    var trimDesc = $.trim(desc).length;
+    var shortenDesc = "";
     return ('<div class="panel-footer">'+ desc +'</div>');
   }
 }
