@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Index - Article Management</title>
+  <title id="title"></title>
   <link rel="shortcut icon" type="image/x-icon" href="https://www.awwwards.com/favicon.ico">
-
+  
   <script src="../../public/libs/jquery/dist/jquery.js"></script>
   <script src="../../public/libs/bootstrap/dist/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" href="../../public/libs/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="../../public/css/home-style.css">
+  <link rel="stylesheet" href="../../public/css/detail-style.css">
+  
 </head>
 <body>
   <div class="jumbotron">
@@ -20,7 +22,7 @@
       <p>Mission, Vission & Values</p>
     </div>
   </div>
-  
+    
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -38,21 +40,15 @@
       </div>
     </div>
   </nav>
-   
-  <div class="container">
-    <div class="page-preloader page-preloader-light">
-        <div class="loader loader-frames"><i></i><i></i><i></i><i></i></div>
-    </div>
-  </div>
-  
 
-  <div class="container">    
-   <div id="article">
-    <div class="row">
-    </div>
-   </div>
-  </div><br>
-  
+  <div class="container">
+    <div class="detail-image img img-responsive" id="main-image"></div>
+    <hr>
+    <h1 class="text-center" id="article-title"></h1>
+    <p id="desc" class="article-desc"></p>
+    <p class="author">Author: <span id="author"></span></p>
+  </div>
+
   <footer class="container-fluid text-center">
     <p>Subcribe Daily News</p>  
     <form class="form-inline">Subcribe:
@@ -61,6 +57,11 @@
     </form>
   </footer>
 
-  <script src="../../public/js/index.js"></script>
+  <script src="../../public/js/detail.js"></script>
+  <script>
+    $(document).ready(function() {
+      console.log(findGetParameter("id"));
+    })
+  </script>
 </body>
 </html>

@@ -1,0 +1,31 @@
+
+body {
+  background-color: #f1f1f1;
+}
+
+.container {
+  
+}
+
+.detail-image {
+  height: 700px;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#article-title {
+  color: #eb6c6a;
+}
+
+.author {
+  font-size: 17px;
+  color: rgb(107, 102, 102);
+}
+
+.article-desc {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(107, 102, 102);
+  font-size: 18px;
+}

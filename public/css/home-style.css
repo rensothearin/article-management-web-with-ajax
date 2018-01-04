@@ -1,7 +1,16 @@
+#article div.row a:link, #article div.row a:hover {
+  text-decoration: none;
+}
+
 * {
   font-family: Georgia, serif;
 
 }
+
+body {
+  background-color: #f1f1f1;
+}
+
 /* Remove the navbar's default rounded borders and increase the bottom margin */ 
 .navbar {
   margin-bottom: 50px;
@@ -95,7 +104,7 @@
 
 /* Add a gray background color and some padding to the footer */
 footer {
-  background-color: #f2f2f2;
+  background-color: #fff;
   padding: 25px;
   position: static;
   right: 0;

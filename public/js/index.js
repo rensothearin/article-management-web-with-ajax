@@ -33,11 +33,13 @@ function getArticles() {
       console.log(result);
       for(var i=0; i<result.DATA.length; i++) {
         $("#article div.row").append('<div class="col-md-4 col-sm-6">' +
-          '<div class="panel panel-primary">' +
-            '<div class="panel-heading">'+ result.DATA[i].TITLE +'</div>' +
-            defaultImage(result.DATA[i].IMAGE) +
-            defaultArticleDescription(result.DATA[i].DESCRIPTION) +
-          '</div>' +
+          '<a href="detail.html?id='+ result.DATA[i].ID +'">' +
+            '<div class="panel panel-primary">' +
+              '<div class="panel-heading">'+ result.DATA[i].TITLE +'</div>' +
+              defaultImage(result.DATA[i].IMAGE) +
+              defaultArticleDescription(result.DATA[i].DESCRIPTION) +
+            '</div>' +
+          '</a>' +
         '</div>')
       }
     }, 
