@@ -9,9 +9,15 @@
 
   <script src="../../public/libs/jquery/dist/jquery.js"></script>
   <script src="../../public/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/fb33e5b672.js"></script>
+  <script src="../../public/plugins/jquery-preloader-js/js/jquery-loading.js"></script>
+  <script src="../../public/js/index.js"></script>
 
   <link rel="stylesheet" href="../../public/libs/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="../../public/css/home-style.css">
+  <link rel="stylesheet" href="../../public/css/article-style.css">
+  <link href="../../public/plugins/jquery-preloader-js/css/jquery-loading.css" rel="stylesheet">
+
 </head>
 <body>
   <div class="jumbotron">
@@ -29,38 +35,49 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="#">Newst Magazine</a>
+        <a class="navbar-brand" href="javascript:void(0)">Newst Magazine</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
+          <li class="active"><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+          <li><a href="./all-right-reserved.html"><i class="fa fa-link" aria-hidden="true"></i> About</a></li>
         </ul>
       </div>
     </div>
   </nav>
-   
-  <div class="container">
-    <div class="page-preloader page-preloader-light">
-        <div class="loader loader-frames"><i></i><i></i><i></i><i></i></div>
-    </div>
-  </div>
-  
-
-  <div class="container">    
+      
+  <div class="container">      
    <div id="article">
     <div class="row">
+        <div id="f-row" class="col-md-4 col-sm-6"></div>
+        <div id="s-row" class="col-md-4 col-sm-6"></div>
+        <div id="t-row" class="col-md-4 col-sm-6"></div>
     </div>
    </div>
   </div><br>
+ 
+  <div class="container">
+    <div id="preloader">
+      <div id="preloader-inner">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="col-md-2 col-md-offset-5 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 no-padding margin-bottom">
+      <a href="?page=1" class="col-md-12 col-xs-12 col-sm-12 button button-round button-green load-more" title="Load more">
+        LOAD MORE
+      </a>
+    </div>
+  </div>
   
   <footer class="container-fluid text-center">
-    <p>Subcribe Daily News</p>  
+    <p>Subcribe Daily News</p>   
     <form class="form-inline">Subcribe:
       <input type="email" class="form-control" size="50" placeholder="Email Address">
       <button type="button" class="btn btn-danger">Count me in</button>
     </form>
   </footer>
 
-  <script src="../../public/js/index.js"></script>
 </body>
 </html>

@@ -1,3 +1,9 @@
+'use strict';
+
+/**
+ * Reference: StackOverflow
+ * @param {*} parameterName 
+ */
 function findGetParameter(parameterName) {
   var result = null,
       tmp = [];
@@ -11,6 +17,10 @@ function findGetParameter(parameterName) {
   return result;
 }
 
+/**
+ * Function to check if the article has author name or not
+ * @param {*} name 
+ */
 function defaultAuthor(name) {
   if (name == null || name == "") {
     $("#author").html("Admin - Ms Panda");
@@ -19,18 +29,23 @@ function defaultAuthor(name) {
   }
 }
 
+/**
+ * Function to get the detail article
+ * @param {*} articleId 
+ */
 function getDetailArticle(articleId) {
   var root = "http://api-ams.me/v1/api/articles/";
   $.ajax({
     url: root+articleId,
     type: "GET",
     success: function(result, status, xhr) {
-      $("#title").html(result.DATA.TITLE);
+      console.log(result);
+      $("#title").html("Newst | " + result.DATA.TITLE);
       $("#main-image").attr("style", "background-image:url("+ result.DATA.IMAGE +")");
       $("#article-title").html(result.DATA.TITLE);
       $("#desc").html(result.DATA.DESCRIPTION);
       defaultAuthor(result.DATA.AUTHOR.NAME);
-      console.log(result);
+      $("#created-date").html(result.DATA.CREATED_DATE);
     },
     error: function(xhr, error, status) {
 
@@ -41,8 +56,11 @@ function getDetailArticle(articleId) {
   })
 }
 
-$(document).ready(function() {
 
+$(document).ready(function() {
+  /**
+   * Get article id and display
+   */
   var articleId = findGetParameter("id");
   getDetailArticle(articleId);
 });

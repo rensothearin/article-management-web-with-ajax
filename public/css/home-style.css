@@ -1,14 +1,14 @@
-#article div.row a:link, #article div.row a:hover {
-  text-decoration: none;
-}
 
 * {
   font-family: Georgia, serif;
-
 }
 
 body {
   background-color: #f1f1f1;
+}
+
+#article div.row a:link, #article div.row a:hover {
+  text-decoration: none;
 }
 
 /* Remove the navbar's default rounded borders and increase the bottom margin */ 
@@ -33,14 +33,12 @@ body {
 
 .navbar-inverse .navbar-nav > .active > a {
   color: #000000;
-  font-weight: 900;
   background-color: #49c5b6;
 }
 
 .navbar-inverse .navbar-nav > .active > a:hover, 
 .navbar-inverse .navbar-nav > .active > a:focus  {
   color: #fff;
-  font-weight: 900;
   background-color: #49c5b6;
 }
 
@@ -53,14 +51,59 @@ body {
   border-radius: 4px;
 }
 
-.nav > li > a { 
-  font-size: 25px;
+.nav > li > a:link, .nav > li > a:visited { 
+  font-size: 19px;
+  color: #000000;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  color: #fff;
 }
 
 /* Remove the jumbotron's default bottom margin */ 
  .jumbotron {
   margin-bottom: 0;
   background-color: #f4f7f6;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,
+.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2,
+.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, 
+.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4,
+.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5,
+.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7,
+.col-xs-8, .col-sm-8, .col-md-8, .col-lg-8,
+.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
+.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11,
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+a.load-more:link, a.load-more:hover {
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.load-more:hover {
+  background-color: #49c5b6;
+}
+
+.button-green {
+  background-color: #49c5b6;
+  border-color: #49c5b6;
+}
+
+span#more {
+  right: 20px;
+  position: absolute;
+}
+
+#preloader-inner {
+  height: 90px;
+  bottom: 20px;
 }
 
 .panel-primary > .panel-heading {
@@ -126,12 +169,11 @@ footer {
 
   .navbar-inverse .navbar-brand {
     color: #000000;
-    font-weight: 900;
     font-size: 25px;
   }
 
   .nav > li > a { 
-    font-size: 21px;
+    font-size: 19px;
   }
 
   .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {

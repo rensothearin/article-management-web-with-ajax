@@ -2483,8 +2483,8 @@ ol ol ol{
   border:solid 2px #16a085
 }
 .button-green{
-  background-color:#27ae60;
-  border:solid 2px #27ae60
+  background-color:#49c5b6;
+  border:solid 2px #49c5b6;
 }
 .button-green-3d{
   border:none!important;
@@ -2492,12 +2492,14 @@ ol ol ol{
   padding:0px 22px
 }
 .button-green:hover{
-  background-color:#2ecc71;
-  border:solid 2px #2ecc71
+  background-color:#0de4cb;
+  border:solid 2px #0de4cb;
+  color: white;
 }
 .button-green:active{
-  background-color:#27ae60;
-  border:solid 2px #27ae60
+  background-color:#49c5b6;
+  border:solid 2px #49c5b6;
+  color: white;
 }
 .button-blue{
   background-color:#2980b9;

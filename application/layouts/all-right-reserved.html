@@ -4,16 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title id="title"></title>
+  <title>Index - Article Management</title>
   <link rel="shortcut icon" type="image/x-icon" href="https://www.awwwards.com/favicon.ico">
-  
+
   <script src="../../public/libs/jquery/dist/jquery.js"></script>
   <script src="../../public/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/fb33e5b672.js"></script>
+  <script src="../../public/plugins/jquery-preloader-js/js/jquery-loading.js"></script>
+  <script src="../../public/js/index.js"></script>
 
   <link rel="stylesheet" href="../../public/libs/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="../../public/css/home-style.css">
-  <link rel="stylesheet" href="../../public/css/detail-style.css">
-  
+  <link rel="stylesheet" href="../../public/css/article-style.css">
+  <link href="../../public/plugins/jquery-preloader-js/css/jquery-loading.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../public/css/all-right-style.css">
+
 </head>
 <body>
   <div class="jumbotron">
@@ -22,7 +27,7 @@
       <p>Mission, Vission & Values</p>
     </div>
   </div>
-    
+  
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -31,7 +36,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="./index.html">Newst Magazine</a>
+        <a class="navbar-brand" href="javascript:void(0)">Newst Magazine</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
@@ -41,28 +46,21 @@
       </div>
     </div>
   </nav>
-
+  
   <div class="container">
-    <div class="detail-image img img-responsive" id="main-image"></div>
-    <hr>
-    <h1 class="text-center" id="article-title"></h1>
-    <p id="desc" class="article-desc"></p>
-    <p class="author">Author: <span id="author"></span> || Created date: <span id="created-date"></span></p>
+    <div class="text-center">
+      <h1>COPYRIGHT <i class="fa fa-copyright" aria-hidden="true"></i> 2018 Ms. Panda</h1>
+      <h4>Contact Info: ren.sothearin@gmail.com</h4>
+    </div>
   </div>
-
+  
   <footer class="container-fluid text-center">
-    <p>Subcribe Daily News</p>  
+    <p>Subcribe Daily News</p>   
     <form class="form-inline">Subcribe:
       <input type="email" class="form-control" size="50" placeholder="Email Address">
       <button type="button" class="btn btn-danger">Count me in</button>
     </form>
   </footer>
 
-  <script src="../../public/js/detail.js"></script>
-  <script>
-    $(document).ready(function() {
-      console.log(findGetParameter("id"));
-    })
-  </script>
 </body>
 </html>
