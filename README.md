@@ -19,9 +19,9 @@ This sample article website has technology included:
 * [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML) - HyperText Markup Language for web page skeleton!
 * [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) - Cascading Stylesheets for styling web page.
 * [Javascript](https://developer.mozilla.org/en-US/docs/Learn/javascript) - Light weight programming language to solve complicated things on web.
-* [Ajax](https://en.wikipedia.org/wiki/Ajax_(programming)) - Asynchronous JavaScript And XML for Server/Client Site technique
-* [Twitter Bootstrap] - great UI boilerplate for modern web apps
-* [jQuery] - duh
+* [Ajax](https://en.wikipedia.org/wiki/Ajax_(programming)) - Asynchronous JavaScript And XML for Server/Client Site technique.
+* [Twitter Bootstrap](http://getbootstrap.com/) - great UI boilerplate for modern web apps.
+* [jQuery](http://jquery.com/) - jQuery is a fast, small, and feature-rich JavaScript library.
 * [JSON](https://www.slideshare.net/SothearinRen/json-javascript-object-notation-84947161) - JavaScript Object Notation.
 
 All of these languages are open source and easy to learn.
