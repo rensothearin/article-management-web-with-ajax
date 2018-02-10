@@ -22,7 +22,7 @@
 <body>
   <div class="jumbotron">
     <div class="container text-center">
-      <h1>Newst Magazine</h1>      
+      <h1 style="color: #616161;">Newst <span class="cus-navbar-brand">Magazine</span></h1>      
       <p>Mission, Vission & Values</p>
     </div>
   </div>
@@ -35,13 +35,19 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="javascript:void(0)">Newst Magazine</a>
+        <a class="navbar-brand" href="javascript:void(0)">Newst <span class="cus-navbar-brand">Magazine</span></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li class="active"><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-          <li><a href="./all-right-reserved.html"><i class="fa fa-link" aria-hidden="true"></i> About</a></li>
+          <li><a href="./all-rights-reserved.html"><i class="fa fa-link" aria-hidden="true"></i> About</a></li>
         </ul>
+        <form class="navbar-form navbar-right" action="">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Title" id="search">
+          </div>
+          <button type="button" class="btn btn-default"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+        </form>
       </div>
     </div>
   </nav>
@@ -56,7 +62,7 @@
    </div>
   </div><br>
  
-  <div class="container">
+  <div class="container" id="preloader-container">
     <div id="preloader">
       <div id="preloader-inner">
       </div>
@@ -65,12 +71,14 @@
 
   <div class="container">
     <div class="col-md-2 col-md-offset-5 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 no-padding margin-bottom">
-      <a href="?page=1" class="col-md-12 col-xs-12 col-sm-12 button button-round button-green load-more" title="Load more">
+      <a href="javascript:void(0)" class="col-md-12 col-xs-12 col-sm-12 button button-round button-green load-more" title="Load more" id="load-more">
         LOAD MORE
       </a>
     </div>
   </div>
-  
+
+
+
   <footer class="container-fluid text-center">
     <p>Subcribe Daily News</p>   
     <form class="form-inline">Subcribe:
