@@ -1,4 +1,4 @@
-# Newst Magazine
+# Newst Magazine (Well,,,, the name I just create for fun 😸)
 
 Newst Magazine is a practical implementation sample of jQuery Ajax requested from API. [http://api-ams.me]
 This sample article website included:
@@ -8,7 +8,7 @@ This sample article website included:
 
 # Features!
 
-  - Load article
+  - Load article (the article API is down right now, so you can take this example and connect with any other article website that you can find; just the flow still maintain the same. Good luck 😄!)
   - Pagination
   - Detail article description
 
@@ -28,12 +28,12 @@ All of these languages are open source and easy to learn.
 
 ### How to run
 
-It doesn't required any installation for running this sample website.
+It doesn't require any additional installation from code for running this sample website.
 
 Download or clone project and then:
 
 - Open "Application/Layout" folder.
-- Open file "index.html".
+- Open file "index.html" with "live server" plugin in VS Code.
 
 You can use any editor to edit code. I recommend you to use one of my favorite editor is [Visual Studio Code](https://code.visualstudio.com/?wt.mc_id=DX_841432).
 
@@ -43,4 +43,4 @@ License
 
 MIT
 
-**Free Software, Hell Yeah!**
+**Free Software, Oh Yeah!**
